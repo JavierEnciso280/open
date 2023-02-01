@@ -1,0 +1,39 @@
+
+body{
+    background-image: linear-gradient(rgb(26, 65, 26), yellow);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.container{
+    margin-top: 4rem;
+    min-height: 100vh;
+    min-width:100%;
+    justify-content: center;
+}
+.row div{
+    margin: 0.1rem;
+}
+.col-sm{
+    background-color: blue;
+    color: white;
+}
+.col{
+    background-color: aqua;
+    border: none;
+}
+.col-md{
+    background-color: blueviolet;
+    color: white;
+}
+.col-lg{
+    background-color: cadetblue;
+    color: white;
+}
+.col-xl{
+    background-color: brown;
+    color: white;
+}
+.col-xxl{
+    background-color: darkblue;
+    color: white;
+}
