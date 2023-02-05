@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Elementos de Interés en Bootstrap</title>
+</head>
+<body>
+    <!--Jumbotron-->
+    <div class="container-fluid;">
+        <div class="bg-light rounded-3 mt-3 p-2" style="width:600px; margin-left: 5rem;">
+            <h1 class="display-5 fw-bold">Jumbotron</h1>
+            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae ratione itaque, quia in doloribus repudiandae quam perspiciatis iste aut. Eum voluptates consequuntur voluptatem praesentium accusantium et eius dignissimos quos!</p>
+            <!--btn apuntando a modal con id #modalejemplo-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                Lanzar modal
+            </button>
+        </div>
+    </div>
+        
+    <!--Modal-->
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Bootstrap</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi cum neque iure cumque laborum corporis rem quasi error, minima necessitatibus fuga! Suscipit dolor veritatis et at commodi nesciunt ut.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Formulario y card-->
+    <div class="container-fluid rounded-3;" style="margin-left: 4rem; min-width: 75%;" >
+        <!--Formulario-->
+        <div class="col-sm-6 m-3;">
+            <div>
+                <label for="nombre" class="form-label pt-2 mb-0">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Escribe tu nombre">
+            </div>
+            <div>
+                <label for="telef" class="form-label pt-2 mb-0">Teléfono</label>
+                <input type="number" id="telef" class="form-control" placeholder="Tu númer de teléfono aquí">
+            </div>
+            <div>
+                <label for="textarea1" class="form-label pt-2 mb-0">Escríbenos un mensaje</label>
+                <textarea class="form-control" id="textarea1" rows="5"></textarea>
+            </div>
+            <div class="pt-2">
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!--Fin de formulario-->
+    <hr>
+    <!--card-->
+    <div class="w-100" style="margin-left: 5rem;">
+        <div class="card mt-1 mb-2" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Javier Enciso</h5>
+                <p class="m-0">Estudiante universitario, apasionado por la tecnología y la naturaleza</p>
+                <p class="m-0">Mi mas grande anhelo: contribuir con todo lo que ayude a la humanidad a respetar y preservar la naturaleza.</p>
+                <p><strong>La tecnología es la clave de todo"</strong></p>
+            </div>
+            <div class="card-footer">
+                <a href="mailto:encisojavier280@gmail.com?Subject=Vengo%20desde%20el%20Bootcamp">Contactar por correo</a>
+            </div>
+        </div>
+    </div>
+    <!--Fin de card-->  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
