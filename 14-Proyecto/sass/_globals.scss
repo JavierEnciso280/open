@@ -1,0 +1,352 @@
+@use "components";
+
+@mixin section-display{
+    width: 100%;
+    padding: 8rem 10rem;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    align-items: center;
+    
+
+    .logo img{
+        max-width: 7rem;
+    }
+}
+
+.sec-home{
+    display: flex;
+    @include section-display();
+    padding-bottom: 3rem;
+    .home-cta{
+        flex: 1;
+
+        .home-cta-text{
+
+            a{
+                font-weight: 600;
+            }
+            .title{
+                font-size: 50px;
+                font-weight: 400;
+                display: flex;
+            }
+    
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+                padding-top: 5rem;
+            }
+
+            form{
+               padding-top: 1rem;
+               
+                .input{
+                    height: 4rem;
+                }
+    
+                button{
+                    
+                }
+            }
+        }
+    }
+}
+
+.home-img{
+    background-color: gray;
+    
+    .img-wallet{
+        height: 600px;
+    }
+}
+
+.sec-features{
+    width: 100%;
+    padding: 0px 8rem 2rem;
+
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+    .intro-features{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        
+    }
+
+    .features{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        
+        .text{
+            display: flex;
+            width: 40%;
+            margin-right: 2rem;
+            flex-direction: column;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                max-width: 100%;
+                max-height: 100%;
+                
+                .icon-sm{
+                    height: 3rem;
+                    width: 6rem;
+                    border: none;
+                    // box-shadow: 0 0 15px rgb(228, 227, 227);
+                    padding-top: 0.2rem;
+                    
+                    i{
+                        font-size: 1.5rem;
+                        color: blue;
+                        
+                                    
+                    }
+                }
+
+               
+                .description{
+
+                    .title{
+                        
+                    }
+
+                    .description-text{
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        img{
+            width: 100%;
+            
+            .image{
+            }
+        }
+
+        
+    }
+
+}
+
+.sec-benefits{
+    @extend .sec-features, .intro-features;
+    border-top: 1px rgb(221, 219, 219) solid;
+    .intro{
+        padding: 25px;
+
+        
+    }
+
+    .cards{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+        
+        .benefit-cards{
+            
+            .icon{
+                color: blue;
+                font-size: 5rem;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .description{
+                .title{
+                    font-weight: 600;
+                    font-size: 20px;
+                    
+                }
+                .text{
+                    font-size: 18px;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.sec-kpis{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 4rem;
+    .kpi{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        .number{
+            font-size: 45px;
+            font-weight: 600;
+        }
+        .text{
+            color: white;
+            opacity: 0.7;
+            font-size: 18px;
+        }
+    }
+}
+
+.sec-onboarding{
+    padding-top: 1rem;
+    .intro{
+        @extend .sec-features, .intro-features;
+
+        .title{
+            font-size: 2rem;
+        }
+        .parrafo{
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+    }
+    .enlaces{
+        padding: 5rem;
+        .link{
+            
+            text-align: center;
+          
+            .icon{
+                font-size: 5rem;
+                color: blue;
+              
+            }
+            
+            .separator{
+                border-top: 1px solid gray;
+                flex: 1;
+                }
+            .link-cuenta{
+                font-weight: 600;
+                font-size: 1.5rem;
+
+            }
+            
+        }
+        
+    }
+}
+
+.sec-footer-cta{
+    width: 100%;
+    display: flex;
+    .footer-cta{
+        width: 100%;
+        background-color: rgb(245,248,255);
+
+        .footer-cta-intro{
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            margin-top: 3rem;
+        
+            .title{
+                margin-left: 4vw;
+            }
+            .description{
+                margin-left: 4vw;
+            }
+            .start-earn{
+                border-radius: 3px;
+                margin-left: 4vw;
+            }
+        }
+    }
+
+    .image-footer-cta{
+        
+    }
+}
+
+@media (max-width: 768px){
+    .sec-home{
+        max-width: 500px;
+        margin-right: 2rem;
+        margin-left: 2rem;
+       .home-cta{
+
+        .home-cta-text{
+            margin: auto;
+            .description-cta{
+                max-width: 600px;
+                text-align: center;
+                margin-right: 3.5rem;
+               }
+               
+               form{
+    
+                .form-input{
+                    width: 300px;
+                    text-align: center;
+                    margin-right: 6rem;
+                   }
+            
+                   .form-btn{
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    margin-right: 3rem;
+                   }
+               }
+           }
+        }
+       
+    }
+    //////////////////////////////////
+    .sec-features{
+       width: 100%;
+        text-align: center;
+
+        .features{
+            max-width: 600px;
+            text-align: center;
+            
+        
+            
+            .text{
+                width: 600px;
+
+                .feature{
+                    width: 500px;
+                    text-align: center;
+                    padding: 0 3rem;
+                }
+            }
+        }
+        
+    }
+    ////////////////////////////////////
+  
+    .footer-cta-intro{
+        width: 100%;
+        text-align: center;
+        margin: 1px 1px;
+        padding: 1px;
+    }
+}
